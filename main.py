@@ -59,15 +59,15 @@ class Human:
         elif self.water <= -1:
             print("Not enough water…")
             self.alive = False
-    def end_of_day(self):
+    def end_of_year(self):
         print(f"Gladness = {self.gladness}")
         print(f"Satiety = {round(self.satiety, 2)}")
         print(f"Sleep = {round(self.sleep, 2)}")
         print(f"Health = {round(self.health, 2)}")
         print(f"Water = {round(self.water, 2)}")
-    def live(self, day):
-        day = "Day" + str(day) + "of" + self.name + "life"
-        print(f"{day:=^50}")
+    def live(self, year):
+        year = "Year" + str(year) + "of" + self.name + "life"
+        print(f"{year:=^50}")
         live_cube = random.randint(1, 5)
         if live_cube == 1:
             self.to_eat()
@@ -79,10 +79,10 @@ class Human:
             self.to_drink()
         elif live_cube == 5:
             self.to_sick()
-        self.end_of_day()
+        self.end_of_year()
         self.is_alive()
 Bob = Human(name="Bob")
-for day in range(365):
+for year in range(111):
     if Bob.alive == False:
         break
-    Bob.live(day)
+    Bob.live(year)
