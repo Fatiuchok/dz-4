@@ -1,0 +1,5 @@
+We have next logging message:2024-04-06 19:04:37,249:DEBUG - debug
+We have next logging message:2024-04-06 19:04:37,250:INFO - info
+We have next logging message:2024-04-06 19:04:37,250:WARNING - warning
+We have next logging message:2024-04-06 19:04:37,250:ERROR - error
+We have next logging message:2024-04-06 19:04:37,250:CRITICAL - critical

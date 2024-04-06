@@ -86,3 +86,10 @@ for year in range(111):
     if Bob.alive == False:
         break
     Bob.live(year)
+import logging
+logging.basicConfig(level=logging.DEBUG,filename='dz-4.log',filemode='w',format="We have next logging message:%(asctime)s:%(levelname)s - %(message)s" )
+logging.debug("debug")
+logging.info("info")
+logging.warning("warning")
+logging.error("error")
+logging.critical("critical")
